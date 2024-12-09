@@ -1,0 +1,14 @@
+堆:本质是完全二叉树，且数从左添加到右，因此只有同层节点左边节点的子节点数大于等于右边。有大根堆，小根堆，大根堆任意子节点的值不大于其父节点。
+下面给出java实现大根堆：
+public static void Mymaxheap(){
+
+
+
+
+//若子节点大于父节点，交换两节点，同时index变为父节点
+private void heapInsert(int[] arr,int index){
+  while (arr[index]>arr[(index-1)/2]){
+       swap(arr,index,(index-1)/2);
+       index = (index-1)/2;
+       }
+      }
